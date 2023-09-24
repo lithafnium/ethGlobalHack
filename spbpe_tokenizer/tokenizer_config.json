@@ -1,0 +1,14 @@
+{
+  "clean_up_tokenization_spaces": true,
+  "model_max_length": 4096,
+  "special_tokens": [
+    "<s>",
+    "<pad>",
+    "</s>",
+    "<unk>",
+    "[CLS]",
+    "[SEP]",
+    "[MASK]"
+  ],
+  "tokenizer_class": "PreTrainedTokenizerFast"
+}
