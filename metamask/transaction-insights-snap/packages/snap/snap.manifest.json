@@ -4,15 +4,15 @@
   "proposedName": "OpcodeFormer",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MetaMask/template-snap-monorepo.git"
+    "url": "https://github.com/lithafnium/ethGlobalHack.git"
   },
   "source": {
-    "shasum": "vLlu/mR0SV8pgHap1repGXPg2wThJP97lPU8/jH3bus=",
+    "shasum": "GbJbyCTFnXIDcA9G48txV1wgG7YC4+X8EhR2xePJX3w=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
         "iconPath": "images/icon.svg",
-        "packageName": "snap",
+        "packageName": "opcodeformer",
         "registry": "https://registry.npmjs.org/"
       }
     }
