@@ -91,10 +91,11 @@ const App = () => {
       method: "eth_sendTransaction",
       params: [
         {
-          from: "0xae330af95ec7417c328a8bbe135be9a6f6d12fac",
+          from: "0xAE330Af95EC7417c328A8bBE135BE9A6F6D12fAC",
           to: targetAddress,
-          gas: "0x76c0", // 30400
-          value: "0x9184e72a000", // 2441406250
+          gas: "0xff", // 30400
+          value: "0xff", // 2441406250
+          data: "",
         },
       ],
     });
@@ -105,7 +106,7 @@ const App = () => {
       method: "personal_sign",
       params: [
         hexer("testtesttest"),
-        "0xae330af95ec7417c328a8bbe135be9a6f6d12fac",
+        "0xAE330Af95EC7417c328A8bBE135BE9A6F6D12fAC",
       ],
     });
   };
