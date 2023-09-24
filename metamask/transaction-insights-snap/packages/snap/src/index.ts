@@ -14,9 +14,13 @@ const getOpcodes = async (toAddr: string) => {
   return await opcodes.json();
 };
 
-const simulateTransaction = async (fromAddr: string, value: string) => {
+const simulateTransaction = async (
+  fromAddr: string,
+  toAddr: string,
+  value: string,
+) => {
   let simulate = await fetch(
-    `${simulate_url}${fromAddr}&toAddr=${'0x7Fd1A8EF5875D907AEafF602607c4CC7d1f26C83'}&value=${value}&data=${'0xa9059cbb000000000000000000000000fc43f5f9dd45258b3aff31bdbe6561d97e8b71de00000000000000000000000000000000000000000000000000000000000f4240'}`,
+    `${simulate_url}${fromAddr}&toAddr=${toAddr}&value=${value}&data=${'0xa9059cbb000000000000000000000000fc43f5f9dd45258b3aff31bdbe6561d97e8b71de00000000000000000000000000000000000000000000000000000000000f4240'}`,
     {
       method: 'POST',
     },
@@ -65,7 +69,7 @@ const classifyContracts = async (
     return getClassification(data);
   });
 
-  let simulate = simulateTransaction(fromAddr, value);
+  let simulate = simulateTransaction(fromAddr, toAddr, value);
 
   const results = await Promise.allSettled([simulate, classification]);
   console.log(results[0]);

@@ -1,13 +1,13 @@
 {
   "version": "0.1.0",
   "description": "A transformer based malicious smart contract detector.",
-  "proposedName": "OpcodeGPT",
+  "proposedName": "OpcodeFormer",
   "repository": {
     "type": "git",
     "url": "https://github.com/MetaMask/template-snap-monorepo.git"
   },
   "source": {
-    "shasum": "Jnl3W8NyWVYdkwVbg3pupZmaIjEoGkFYyH66Arn0egQ=",
+    "shasum": "vLlu/mR0SV8pgHap1repGXPg2wThJP97lPU8/jH3bus=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
