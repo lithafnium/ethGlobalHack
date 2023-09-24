@@ -136,10 +136,12 @@ export const onTransaction: OnTransactionHandler = async ({ transaction }) => {
       return panel([
         text(
           `${
-            from == c['from'] ? 'Your Address' : c['from'].substring(0, 10)
-          }... ⏩ ${c['to'].substring(0, 10)}...`,
+            from == c['from']
+              ? 'Your Address'
+              : `${c['from'].substring(0, 10)}...`
+          } ⏩ ${c['to'].substring(0, 10)}...`,
         ),
-        text(`**Amount**: ${c['amount']} ${c['symbol']} 💶 `),
+        text(`**Sent Amount**: ${c['amount']} ${c['symbol']} 💶 `),
         divider(),
       ]);
     });
